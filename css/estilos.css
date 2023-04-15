@@ -1,5 +1,13 @@
 /* esto es un comentario*/
 
+.header {
+    width: 0;
+    border: 0;
+    padding: 0;
+    margin: 0;
+
+}
+
 h1 {
     font-family: 'arvo', serif;
     font-size: 1em;
