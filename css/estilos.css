@@ -1,1 +1,44 @@
 /* esto es un comentario*/
+
+h1 {
+    font-family: 'arvo', serif;
+    font-size: 1em;
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+img {
+    /*
+        Ejemplo de como centrar una imagen:
+            display:block
+            margin: auto
+        la propiedad "display" se verá más adelante
+    */
+    display: inline-block;
+    width: 5%;
+    vertical-align: middle;
+
+}
+
+h3 {
+    color: rgb(255, 0, 191);
+    text-align: right;
+}
+
+.caja {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #1a5632;
+}
+
+.rojo{
+    color : red
+}
+
+.centrado {
+    text-align: center;
+}
+
