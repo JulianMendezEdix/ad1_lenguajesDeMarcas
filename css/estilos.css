@@ -1,52 +1,103 @@
 /* esto es un comentario*/
 
-.header {
-    width: 0;
-    border: 0;
-    padding: 0;
+
+
+* {
     margin: 0;
+    padding: 0;
+    outline: 0;
+ }
+ 
+body {
+    width: 960px;
+    margin: auto;/*Para centrar el body en la página*/
+    margin-bottom: 10px;
+    margin-top: 140px;
+    padding: 10px;
+    background-color: #F1F0EA;
+    border: 1px solid black;
+}
+
+.aside1 {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left:0px;    
+    height: 40px;
+    margin-bottom: 0px;
+    background-color: #C98CA7;
+    z-index: 2;/* Cuanto más alto el valor, mas cerca de nuestra visión*/   
+    text-align: center;
+    font-family: 'arvo';
+    font-size: 1em;
+    padding-top: 15px
+}
+
+body header {
+
+    width: 100%;
+    position: fixed;
+    top: 55px;
+    left:0px;   
+    height: 50px;
+    background-color: #1a5632;
+
 
 }
+
+nav {       
+    position: fixed;  
+    top: 105px;
+    left:0px;      
+    width: 100%;
+    height: 30px;
+    background-color: #E0DDCF;
+}
+
+section {
+    width: 500px;
+    height: 300px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #999;
+    float:left
+}
+
+
+aside {
+    width: 450px;
+    height: 300px;
+    margin-bottom: 10px;
+    background-color: #999;
+    float: right;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #999;
+    clear: both;
+}
+
+
+img {
+    position: relative;
+    
+    height: 50px;
+
+    float: left;  
+ }
+
+ #link{
+    color: black;
+    text-decoration: none;
+  }
 
 h1 {
     font-family: 'arvo', serif;
-    font-size: 1em;
+    font-weight: lighter;
     color: white;
-    display: inline-block;
-    vertical-align: middle;
+    font-size: 1em;
+    padding-top: 17px;
+    
 }
-
-img {
-    /*
-        Ejemplo de como centrar una imagen:
-            display:block
-            margin: auto
-        la propiedad "display" se verá más adelante
-    */
-    display: inline-block;
-    width: 5%;
-    vertical-align: middle;
-
-}
-
-h3 {
-    color: rgb(255, 0, 191);
-    text-align: right;
-}
-
-.caja {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #1a5632;
-}
-
-.rojo{
-    color : red
-}
-
-.centrado {
-    text-align: center;
-}
-
