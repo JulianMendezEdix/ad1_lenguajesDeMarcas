@@ -32,6 +32,11 @@ body header {
     top: 2px;
 }
 
+ #link{
+    color: black;
+    text-decoration: none;
+  }
+
 h1 {
     position: absolute;
     left: 90px;
