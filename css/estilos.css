@@ -212,9 +212,9 @@ article {
 }
 
 p{
-    font-weight: 100;
     text-align: justify;
     text-indent: 5%;
+    font-weight: normal;
 }
 
 aside {
