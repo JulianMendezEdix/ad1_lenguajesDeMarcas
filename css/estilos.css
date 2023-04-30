@@ -1,10 +1,8 @@
 body {
 
-    position: static;
-    margin: 0;
+    margin: auto;
     padding: 0;
     width: 960px;
-    margin: auto;
     margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
@@ -19,6 +17,8 @@ body header {
     padding: 0px;
     background-color: #1a5632;
     border-top-right-radius: 20px;
+    box-shadow: 2px 5px 12px #818892;
+    overflow: hidden;
 
 }
 
@@ -57,14 +57,24 @@ h1 {
     margin-right: 10px;
 }
 
+a:hover{
+    color: #8B635C !important; /* Hacemos que el azul sea el estilo en caso de que tambien
+                            hayamos visitado la página*/
+                            }
+
+input:focus {
+background-color: #e6c5bf; 
+}
+
 nav {
 
     position: relative;
     margin: auto;
     height: 38px;
     background-color: white;
-    border: 1px solid rgb(0, 0, 0);
+    background-color:  #D7B8F3;
     border: 2px solid rgb(233, 225, 252);
+    box-shadow: 2px 5px 12px #818892;
 
 }
 
@@ -76,8 +86,8 @@ nav {
     border-top-right-radius: 20px;
     height: 18px;
     padding: 10px;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     color: black;
     text-decoration: none;
     font-family: 'arvo';
@@ -87,8 +97,9 @@ nav {
 
 section {
     float: left;
-    width: 66%;   
-    margin-right: 10px;
+    width: 58%;   
+    margin-right: 2%;
+    box-shadow: 2px 5px 12px #818892;
     /*border: 1px solid black;*/
 }
 
@@ -96,9 +107,14 @@ section {
 
     position: relative;
     height: 32px;
-    background-color: #8B635C;  
+    background-color: #8B635C; 
+    background-color: #F397D6;
+    background-color:  #D7B8F3;
+    background-color: #d7263d; 
     border-top-right-radius: 20px;
+    box-shadow: 2px 5px 12px #818892;
     margin-top: 10px;
+
 }
 
 h2 {
@@ -113,11 +129,14 @@ h2 {
 
 article {
 
-    height: 155px;
+    width: auto;
     border: 1px solid rgb(169, 200, 204);
     border-bottom-style: hidden;
     padding: 10px;
-    background-color: antiquewhite;
+    z-index: 2;
+    overflow: hidden;
+
+
 }
 
 .flex {
@@ -132,6 +151,7 @@ article {
 
 .portada {
 
+    box-shadow: 2px 3px 7px #818892;
     margin: auto;
     height: 156px;
     float: left;
@@ -143,24 +163,44 @@ article {
 
     width: 100%;
     padding-left: 0px;
-    text-align: justify;
+    text-align: center;
     font-size: 14px;
     font-weight: bold;
+    padding-top: 3%;
+
+
     
 }
 
 p{
     font-weight: 100;
+    text-align: justify;
+    text-indent: 5%;
 }
 
 aside {
 
-    width:32%;
-    height: 1715PX;
+    position: relative;
+    overflow: hidden;
+    height: 1915px;
+    width:40%;
     margin-bottom: 10px;    
     float: right;
-    overflow: hidden;
+    box-shadow: 2px 5px 12px #818892;
 }
+
+.twittermovil {
+
+    display: none;
+
+}
+
+.twitternormal {
+
+    border: 0px;
+
+}
+
 
 .foto {
 
@@ -179,7 +219,6 @@ aside {
     margin-left: 10px;
 }
 
-
 iframe {
     width: fit-content;
     height: fit-content;
@@ -196,17 +235,29 @@ iframe {
     position: relative;
     height: 32px;
     background-color: #8B635C;  
+    background-color: #d7263d; 
     border-top-right-radius: 20px;
     margin-top: 20px;
     clear: left;
+    box-shadow: 2px 5px 12px #818892;
 
 }
 
 label {
 
     display: inline-block;
-    width:  50px;
-    margin: 30px;
+    width:  20px;
+    margin: 20px;
+    z-index: 5;
+}
+
+input {
+
+    display: inline-block;
+    width:  12%;
+    margin: 20px;
+
+
 }
 
 .somosparte{
@@ -214,8 +265,10 @@ label {
     position: relative;
     height: 32px;
     background-color: #8B635C;  
+    background-color: #d7263d; 
     margin-top: 10px;
     border-top-right-radius: 20px;
+    box-shadow: 2px 5px 12px #818892;
 
 }
 
@@ -223,6 +276,10 @@ label {
 
     height: 80px;
 
+}
+
+.sombra {
+    box-shadow: 2px 5px 12px #818892;
 }
 
 .newsletter {
@@ -236,22 +293,29 @@ label {
     display: inline-block;
     text-align: center;
     margin: auto;
-    height: 80px;
+    height: auto;
+    width: 13%;
 
 }
 
 footer {
 
-    height: 100px;
+    height: 70px;
+    width: 100%;
     margin-bottom: 10px;
     margin-top: 10px;
+    padding-top: 5%;
     background-color: #1a5632;
     color: white;
     border-bottom-right-radius: 20px;
-    padding-left: 100px;
+    box-shadow: 2px 5px 12px #818892;
+    text-align: center;
 
 
     
 }
+
+
+
 
 
