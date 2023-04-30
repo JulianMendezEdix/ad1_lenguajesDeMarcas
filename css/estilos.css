@@ -19,7 +19,6 @@ body header {
     border-top-right-radius: 20px;
     box-shadow: 2px 5px 12px #818892;
     overflow: hidden;
-
 }
 
 .marginBottom {
@@ -58,12 +57,14 @@ h1 {
 }
 
 a:hover{
-    color: #8B635C !important; /* Hacemos que el azul sea el estilo en caso de que tambien
-                            hayamos visitado la página*/
-                            }
+    color: #8B635C !important; 
+
+}
 
 input:focus {
+
 background-color: #e6c5bf; 
+
 }
 
 nav {
@@ -73,8 +74,9 @@ nav {
     height: 38px;
     background-color: white;
     background-color:  #D7B8F3;
-    border: 2px solid rgb(233, 225, 252);
     box-shadow: 2px 5px 12px #818892;
+    z-index: 2;
+
 
 }
 
@@ -82,18 +84,53 @@ nav {
 
     display: inline-block;
     border-right: 1px solid rgb(0, 0, 0);
-    border-right: 2px solid rgb(233, 225, 252);
+    border-right: 2px solid black;
     border-top-right-radius: 20px;
     height: 18px;
     padding: 10px;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 14px;
+    padding-right: 18px;
     color: black;
     text-decoration: none;
     font-family: 'arvo';
-    font-size: small;
+    font-size: smaller;
 
 }
+
+#menu2 {
+    display: none;
+}
+
+#menu2 ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+   }
+   
+#menu2 ul a {
+
+    display:block;
+    text-decoration:none;
+    padding:10px;
+   }
+   
+#menu2 ul ul {
+    display:none;
+    position:absolute;
+    top:90%;
+    left:0;
+    background:#D7B8F3;
+    padding:0;
+    box-shadow: 2px 5px 12px #818892;
+   }
+   
+#menu2 ul ul li {
+    width:200px
+   } 
+
+#menu2 ul li:hover > ul {
+    display:block;
+   }
 
 section {
     float: left;
@@ -114,6 +151,7 @@ section {
     border-top-right-radius: 20px;
     box-shadow: 2px 5px 12px #818892;
     margin-top: 10px;
+    z-index: 1;
 
 }
 
@@ -287,7 +325,6 @@ input {
     height: 80px;
 }
 
-
 .somospartelogos {
 
     display: inline-block;
@@ -295,7 +332,6 @@ input {
     margin: auto;
     height: auto;
     width: 13%;
-
 }
 
 footer {
