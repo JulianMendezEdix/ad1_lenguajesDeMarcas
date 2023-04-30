@@ -1,3 +1,5 @@
+
+
 body {
 
     margin: auto;
@@ -56,17 +58,6 @@ h1 {
     margin-right: 10px;
 }
 
-a:hover{
-    color: #8B635C !important; 
-
-}
-
-input:focus {
-
-background-color: #e6c5bf; 
-
-}
-
 nav {
 
     position: relative;
@@ -84,7 +75,7 @@ nav {
 
     display: inline-block;
     border-right: 1px solid rgb(0, 0, 0);
-    border-right: 2px solid black;
+    border-right: 2px solid white;
     border-top-right-radius: 20px;
     height: 18px;
     padding: 10px;
@@ -93,9 +84,14 @@ nav {
     color: black;
     text-decoration: none;
     font-family: 'arvo';
-    font-size: smaller;
+    font-size: small;
 
 }
+
+a:hover{
+    color: #8B635C !important; 
+}
+
 
 #menu2 {
     display: none;
@@ -175,7 +171,6 @@ article {
     z-index: 2;
     overflow: hidden;
 
-
 }
 
 .flex {
@@ -249,6 +244,7 @@ aside {
     float: left;
     margin-right: 10px;
     border: 1px solid rgb(169, 200, 204);
+    box-shadow: 2px 5px 12px #818892;
 }
 
 .floatright {
@@ -262,6 +258,7 @@ iframe {
     width: fit-content;
     height: fit-content;
     float: left;
+    box-shadow: 2px 5px 12px #818892;
 
 }
 
@@ -282,22 +279,46 @@ iframe {
 
 }
 
-label {
-
-    display: inline-block;
-    width:  20px;
-    margin: 20px;
-    z-index: 5;
+.newsletter {
+    height: 240px;
 }
 
-input {
 
-    display: inline-block;
-    width:  12%;
-    margin: 20px;
-
-
+form{
+	width: 280px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
 }
+
+form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input {
+	width:180px;
+	padding:3px 10px;
+	border-radius:3px;
+    border:1px solid #d7263d;
+    border:1px solid black;
+
+	margin:10px 0;
+	display:inline-block;
+}
+
+form input[type="submit"]{
+
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#1a5632;
+} 
 
 .somosparte{
 
@@ -321,10 +342,6 @@ input {
     box-shadow: 2px 5px 12px #818892;
 }
 
-.newsletter {
-
-    height: 80px;
-}
 
 .somospartelogos {
 
