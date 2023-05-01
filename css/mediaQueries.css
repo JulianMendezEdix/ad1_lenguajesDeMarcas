@@ -6,7 +6,7 @@
     }
 
     aside {
-        height: 1888px;
+        height: 2320px;
         width: 43%;
     }
 
@@ -22,7 +22,7 @@
 
     aside {
 
-        height: 2130px;
+        height: 2440px;
     }
 
 }
@@ -36,17 +36,17 @@
 
     aside {
 
-        height: 2330px;
+        height: 2630px;
     }
 
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
 
 
     aside {
 
-        height: 2450px;
+        height: 2720px;
     }
 
 
@@ -77,7 +77,7 @@
 
     aside {
 
-        height: 2550px;
+        height: 2850px;
     }
 
 }
