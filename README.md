@@ -1,4 +1,4 @@
-"# ad1_lenguajesDeMarcas" 
+# ad1_lenguajesDeMarcas
 
 Esta es la práctica 1 de Lenguajes de Marcas de Julian Mendez.
 
