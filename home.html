@@ -14,19 +14,51 @@
 
 </head>
 
+<!--------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------->
+<!------------------------------------    BODY    --------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------->
+
 <body>
 
+    <!----------------------------------------------------------------------------------------------------->
+    <!------------------------------------    HEADER   ---------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------->
+
     <header>
-        <a href=""><img class="logo" src="img/logo.jpg" alt="log :)"></a>
-        <h1>LOJASOUND RECORDS</h1>
-        <a href="https://twitter.com/lojasoundrecord" target="_blank"><img class="icons" src="img\icons8-twitter-24.png" alt="log :)"></a>
-        <a href="https://www.facebook.com/lojasound/" target="_blank"><img class="icons" src="img\icons8-facebook-24.png" alt="log :)"></a>
-        <a href="https://www.instagram.com/lojasoundrecords" target="_blank"><img class="icons" src="img\icons8-instagram-24.png" alt="log :)"></a>
-        <a href="https://bit.ly/lojasoundyt" target="_blank"><img class="icons" src="img\icons8-youtube-logo-24.png" alt="log :)"></a>
+
+        <a href="home.html">
+            <img id="logo" src="img/logo.jpg" alt="upss :)">
+        </a>
+
+        <h1 id="titulo">LOJASOUND RECORDS</h1>
+
+        <a href="https://twitter.com/lojasoundrecord" target="_blank">
+            <img class="icons" src="img\icons8-twitter-24.png" alt="upss :)">
+        </a>
+
+        <a href="https://www.facebook.com/lojasound/" target="_blank">
+            <img class="icons" src="img\icons8-facebook-24.png" alt="upss :)">
+        </a>
+
+        <a href="https://www.instagram.com/lojasoundrecords" target="_blank">
+            <img class="icons" src="img\icons8-instagram-24.png" alt="upss :)">
+        </a>
+
+        <a href="https://bit.ly/lojasoundyt" target="_blank">
+            <img class="icons" src="img\icons8-youtube-logo-24.png" alt="upss :)">
+        </a>
+    
     </header>
 
-    <!-- MENU-->
+    <!----------------------------------------------------------------------------------------------------->
+    <!------------------------------------    NAVEGADORES    ---------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------->
+    
+    <!-- MENU1 TABLETS Y ESCRITORIO-->
     <nav id="menu1">
+
         <a class="button" href="#">home</a>
         <a class="button" href="#">artistas </a>
         <a class="button" href="#">catalogo</a>
@@ -35,10 +67,10 @@
         <a class="button" href="#">quienes somos</a>
         <a class="button" href="#">tienda</a>
         <a class="button" href="#">contacta</a>
+
     </nav>
 
-
-    <!-- MENU DESPEGABLE PARA MOVILES-->
+    <!-- MENU2 DESPEGABLE PARA MOVILES-->
     <nav id="menu2">
         <ul>
             <li><a href="#"><img height="20px" src="img\icons8-menú-50.png" alt=""></a>
@@ -51,16 +83,19 @@
                     <li><a href="#">quienes somos</a></li>
                     <li><a href="#">tienda</a></li>
                     <li><a href="#">contacta</a></li>
-
                 </ul>
             </li>
         </ul>
-        </nav>
+    </nav>
+
+    <!----------------------------------------------------------------------------------------------------->
+    <!------------------------------------    SECTIONS Y ASIDE    ----------------------------------------->
+    <!----------------------------------------------------------------------------------------------------->
 
     <!-- NOTICIAS DESTACADAS-->
-    <section>
+    <section id="noticias">
 
-        <div class="sectionHeader"><h2>BIENVENIDXS</h2></div>
+        <header><h2>BIENVENIDXS</h2></header>
 
         <article>
             <img class="foto floatright" src="img\rbt_adorno.jpg" alt="">
@@ -99,15 +134,21 @@
     </section>
 
     <!-- TWITTER FEED EMBED-->
-    <aside class="twitternormal">
-        <div class="sectionHeader"><h2>TWITTER FEED</h2></div>
-        <a class="twitter-timeline" href="https://twitter.com/lojasoundrecord?ref_src=twsrc%5Etfw">Tweets de lojasoundrecord</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </aside>
+    <aside id="twitterEscritorio">
+
+        <header><h2>TWITTER FEED</h2></header>
+
+        <a class="twitter-timeline" href="https://twitter.com/lojasoundrecord?ref_src=twsrc%5Etfw">
+            Tweets de lojasoundrecord
+        </a> 
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    
+    </aside>
 
     <!-- DISCOS DESTACADOS-->
     <section>
 
-        <div class="sectionHeader"><h2>DISCOS</h2></div>
+        <header><h2>DISCOS</h2></header>
 
         <article>
 
@@ -156,8 +197,8 @@
 
     </section>
 
-    <!-- TWITTER FEED EMBED en MOVILES-->
-    <aside class="twittermovil">
+    <!-- TWITTER FEED EMBED EN MOVILES-->
+    <aside id="twitterMovil">
         <div class="sectionHeader"><h2>TWITTER FEED</h2></div>
         <a class="twitter-timeline" data-height="510" href="https://twitter.com/lojasoundrecord?ref_src=twsrc%5Etfw">tweets de lojasoundrecord ... cargando ... </a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>    
     </aside>
@@ -165,7 +206,7 @@
     <!-- VIDEOS DESTACADOS-->
     <section>
 
-        <div class="sectionHeader"><h2>VIDEOCLIPS</h2></div>
+        <header><h2>VIDEOCLIPS</h2></header>
 
         <article>
 
@@ -216,8 +257,10 @@
 
     </section>
 
+    <!----------------------------------------------------------------------------------------------------->
+    <!------------------------------------    SUSCRIBETE    ----------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------->
     
-    <!-- SUSCRIBETE-->
     <div>
         <div class="suscribete">
             <h2>SUSCRIBETE A NUESTRA NEWSLETTER</h2>
@@ -238,12 +281,15 @@
 
     </div>
 
-    <!-- SOMOS PARTE DE-->
+    <!----------------------------------------------------------------------------------------------------->
+    <!------------------------------------   SOMOS PARTE    ----------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------->
+    
     <div>
         <div class="somosparte">
             <h2>SOMOS PARTE DE:</h2>
         </div>
-        <article class="somosparte2 borderBottom flex sombra">
+        <article class="somosparte2 borderBottom flexCenter sombra">
             <img class="somospartelogos" src="img\SGAE-logo.jpg" alt="">
             <img class="somospartelogos" src="img\ufi_mobile_logo.png" alt="">
             <img class="somospartelogos" src="img\1553011528274.jpg" alt="">
@@ -252,12 +298,15 @@
         </article>
     </div>
 
+    <!----------------------------------------------------------------------------------------------------->
+    <!------------------------------------      FOOTER      ----------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------->
+    
     <footer>
         
         © LOJASOUND RECORDS S.L. Todos los derechos reservados. Avenida de la Paz 22 Polígono Manzanil I 18300 Loja. Granada
         
     </footer>
-
 
 </body>
 </html>

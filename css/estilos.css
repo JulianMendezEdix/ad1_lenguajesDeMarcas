@@ -1,4 +1,40 @@
+/********************************************************************************************/
+/*********************************  GENERICOS   *********************************************/
+/********************************************************************************************/
 
+h2 {
+    position:absolute;
+    font-family: 'arvo', arial;
+    font-size: 15px;
+    margin-left: 15px;
+    top: -5px;
+    color: white;
+}
+
+a:hover{
+    color: #d7263d !important; 
+}
+
+.flexCenter {
+
+    display: flex;
+    align-items: center;
+    
+} 
+
+.borderBottom {
+    border-bottom: 1px solid rgb(169, 200, 204);
+}
+
+.marginBottom {
+
+    margin-bottom: 10px;
+}
+
+
+/********************************************************************************************/
+/*********************************  BODY   **************************************************/
+/********************************************************************************************/
 
 body {
 
@@ -12,6 +48,11 @@ body {
     letter-spacing: px;
 }
 
+
+/********************************************************************************************/
+/******************************   BODY HEADER   *********************************************/
+/********************************************************************************************/
+
 body header {
 
     position: relative;
@@ -21,77 +62,63 @@ body header {
     border-top-right-radius: 20px;
     box-shadow: 2px 5px 12px #818892;
     overflow: hidden;
+
 }
 
-.marginBottom {
-
-    margin-bottom: 10px;
-}
-
-.logo {
+#logo {
     position: absolute;
     display: inline-block;
     width: 90px;
     top: 4px;
 }
 
-#link{
-    color: black;
-    text-decoration: none;
-  }
+#titulo {
 
-h1 {
     position: absolute;
     left: 91px;
     top: 25px;
     font-family: 'arvo', arial;
     font-size: 20px;
-    /*font-weight: lighter;*/
     letter-spacing: 1.5px;
     color: rgb(255, 255, 255);
-}
-    
-.icons {
 
+}
+
+.icons {
     float: right;
     margin-top: 70px;
     margin-right: 10px;
 }
 
-nav {
+
+/********************************************************************************************/
+/******************************   NAVEGADORES   *********************************************/
+/********************************************************************************************/
+
+#menu1 {
 
     position: relative;
-    margin: auto;
     height: 38px;
-    background-color: white;
     background-color:  #D7B8F3;
     box-shadow: 2px 5px 12px #818892;
     z-index: 2;
 
-
 }
 
-.button {
+#menu1 a {
 
     display: inline-block;
-    border-right: 1px solid rgb(0, 0, 0);
-    border-right: 2px solid white;
+    border-right: 1px solid white;
     border-top-right-radius: 20px;
     height: 18px;
     padding: 10px;
     padding-left: 14px;
     padding-right: 18px;
-    color: black;
-    text-decoration: none;
+    text-decoration: underline; /* me gusta así, ea*/
     font-family: 'arvo';
     font-size: small;
 
 }
-
-a:hover{
-    color: #8B635C !important; 
-}
-
 
 #menu2 {
     display: none;
@@ -129,6 +156,10 @@ a:hover{
     display:block;
    }
 
+/********************************************************************************************/
+/**********************************   SECTION   *********************************************/
+/********************************************************************************************/
+
 section {
     float: left;
     width: 58%;   
@@ -137,7 +168,7 @@ section {
     /*border: 1px solid black;*/
 }
 
-.sectionHeader {
+section header {
 
     position: relative;
     height: 32px;
@@ -152,16 +183,6 @@ section {
 
 }
 
-h2 {
-    position:absolute;
-    font-family: 'arvo', arial;
-    font-size: 15px;
-    margin-left: 15px;
-    top: -5px;
-    color: white;
-    /*font-weight: lighter;*/
-}
-
 article {
 
     width: auto;
@@ -171,16 +192,6 @@ article {
     z-index: 2;
     overflow: hidden;
 
-}
-
-.flex {
-
-    display: flex;
-    align-items: center;
-} 
-
-.borderBottom {
-    border-bottom: 1px solid rgb(169, 200, 204);
 }
 
 .portada {
@@ -223,13 +234,28 @@ aside {
     box-shadow: 2px 5px 12px #818892;
 }
 
-.twittermovil {
+aside header {
+
+    position: relative;
+    height: 32px;
+    background-color: #8B635C; 
+    background-color: #F397D6;
+    background-color:  #D7B8F3;
+    background-color: #d7263d; 
+    border-top-right-radius: 20px;
+    box-shadow: 2px 5px 12px #818892;
+    margin-top: 10px;
+    z-index: 1;
+
+}
+
+#twitterMovil {
 
     display: none;
 
 }
 
-.twitternormal {
+#twitterEscritorio {
 
     border: 0px;
 
