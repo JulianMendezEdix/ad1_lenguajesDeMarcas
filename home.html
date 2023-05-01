@@ -8,6 +8,7 @@
     <title>LojasoundRecords</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/mediaQueries.css">
+    <link rel="stylesheet" href="css/formulario.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
@@ -59,14 +60,14 @@
     <!-- MENU1 TABLETS Y ESCRITORIO-->
     <nav id="menu1">
 
-        <a class="button" href="#">home</a>
+        <a class="button" href="home.html">home</a>
         <a class="button" href="#">artistas </a>
         <a class="button" href="#">catalogo</a>
         <a class="button" href="#">conciertos</a>
         <a class="button" href="#">noticias</a>
         <a class="button" href="#">quienes somos</a>
         <a class="button" href="#">tienda</a>
-        <a class="button" href="#">contacta</a>
+        <a class="button" href="contacta.html">contacta</a>
 
     </nav>
 
@@ -75,14 +76,14 @@
         <ul>
             <li><a href="#"><img height="20px" src="img\icons8-menú-50.png" alt=""></a>
                 <ul>
-                    <li><a href="#">home</a></li>
+                    <li><a href="home.html">home</a></li>
                     <li><a href="#">artistas</a></li>
                     <li><a href="#">catalogo</a></li>
                     <li><a href="#">conciertos</a></li>
                     <li><a href="#">noticias</a></li>
                     <li><a href="#">quienes somos</a></li>
                     <li><a href="#">tienda</a></li>
-                    <li><a href="#">contacta</a></li>
+                    <li><a href="contacta.html">contacta</a></li>
                 </ul>
             </li>
         </ul>
@@ -93,7 +94,7 @@
     <!----------------------------------------------------------------------------------------------------->
 
     <!-- NOTICIAS DESTACADAS-->
-    <section id="noticias">
+    <section id="bienvenidxs">
 
         <header><h2>BIENVENIDXS</h2></header>
 
@@ -120,7 +121,7 @@
             </div>
         </article>
 
-        <article class="borderBottom">
+        <article>
             <img class="portada floatright" src="img\logoblanco.png" alt="">
             <div class="texto">
                 06/09/2021 
@@ -130,6 +131,10 @@
                 </p>
             </div>
         </article>
+
+        <footer>
+            <a id="botonFooter" href="">TODAS LAS NOTICIAS</a>
+        </footer>
         
     </section>
 
@@ -146,7 +151,7 @@
     </aside>
 
     <!-- DISCOS DESTACADOS-->
-    <section>
+    <section id="discos">
 
         <header><h2>DISCOS</h2></header>
 
@@ -195,6 +200,10 @@
 
         </article>
 
+        <footer>
+            <a id="botonFooter" href="">TODO EL CATALOGO</a>
+        </footer>
+
     </section>
 
     <!-- TWITTER FEED EMBED EN MOVILES-->
@@ -204,7 +213,7 @@
     </aside>
     
     <!-- VIDEOS DESTACADOS-->
-    <section>
+    <section id="videos" class="marginBottom">
 
         <header><h2>VIDEOCLIPS</h2></header>
 
@@ -239,7 +248,7 @@
             </div>
         </article>
 
-        <article class="borderBottom marginBottom">
+        <article class="borderBottom">
 
             <iframe class="margin" width="560" height="315" src="https://www.youtube.com/embed/3pQBa8jLwNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -254,6 +263,10 @@
             </div>
         </article>
 
+        <footer>
+            <a id="botonFooter" href="">TODOS LOS VIDEOS</a>
+        </footer>
+
 
     </section>
 
@@ -261,42 +274,74 @@
     <!------------------------------------    SUSCRIBETE    ----------------------------------------------->
     <!----------------------------------------------------------------------------------------------------->
     
-    <div>
-        <div class="suscribete">
-            <h2>SUSCRIBETE A NUESTRA NEWSLETTER</h2>
-        </div>
+    <section id="suscribete">
+        
+        <header>
+            <h2>SUSCRIBETE POR EMAIL</h2>
+        </header>
 
-        <article class="newsletter borderBottom sombra">
+        <article>
 
-            <form action="procesarPeticion.jsp" method="post">
-                <label for="nombre">Nombre:</label>
-                <input id="nombre" type="text" name="nombre" placeholder="Escribe tu nombre" required>
-                <label for="apellido">Apellidos:</label>
-                <input id="apellido" type="apellido" name="apellido" placeholder="Escribe tus apellidos" required>
-                <label for="email">Email:</label>
-                <input id="email" type="email" name="email" placeholder="Escribe tu email" required>
-                <input type="submit" value="Enviar" />
-            </form>
+            <div class="container">
+
+                <form action="action_page.php">
+
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="nombre">Nombre</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="apellidos">Apellidos</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos.." required>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="email">Email</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="email" id="email" name="email" placeholder="Tu email.." required>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <input type="submit" value="ENVIAR">
+                  </div>
+                </form>
+              </div>
+
         </article>
 
-    </div>
+    </section>
 
     <!----------------------------------------------------------------------------------------------------->
     <!------------------------------------   SOMOS PARTE    ----------------------------------------------->
     <!----------------------------------------------------------------------------------------------------->
     
-    <div>
-        <div class="somosparte">
+    <section id="somosparte">
+
+        <header>
             <h2>SOMOS PARTE DE:</h2>
-        </div>
-        <article class="somosparte2 borderBottom flexCenter sombra">
+        </header>
+
+        <article class="flexCenter">
+
             <img class="somospartelogos" src="img\SGAE-logo.jpg" alt="">
             <img class="somospartelogos" src="img\ufi_mobile_logo.png" alt="">
             <img class="somospartelogos" src="img\1553011528274.jpg" alt="">
 
-
         </article>
-    </div>
+
+    </section>
 
     <!----------------------------------------------------------------------------------------------------->
     <!------------------------------------      FOOTER      ----------------------------------------------->
